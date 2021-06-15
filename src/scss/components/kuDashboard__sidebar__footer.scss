@@ -1,0 +1,37 @@
+.kuDashboard__sidebar__footer {
+	width: 100%;
+
+	display: block;
+	margin: auto;
+	margin-bottom: 0;
+
+	& .nav-ul {
+		height: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		& .nav-item {
+			margin: 0;
+			width: calc(100% - 50px);
+
+			&.-collapse {
+				height: 100%;
+				width: 40px;
+
+				& .nav-link {
+					height: 100%;
+					width: 100%;
+
+					& img {
+						display: block;
+						margin: auto;
+						height: 25px;
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+}

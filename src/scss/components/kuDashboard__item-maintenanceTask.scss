@@ -1,0 +1,88 @@
+.kuDashboard__item.-maintenanceTask {
+
+	& .kuDashboard__item {
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			& .container-maintenanceTask {
+				width: 100%;
+
+				&.-upcoming {
+
+					& .title-maintenanceTask {
+						color: #1A92EA;
+					}
+
+					& .item-maintenanceTask {
+						border-color: #1A92EA;
+
+						& .item-maintenanceTask__text {
+							color: black;
+						}
+
+						& .item-maintenanceTask__date {
+							color: #1A92EA;
+							border-color: #1A92EA;
+						}
+					}
+				}
+
+				& .title-maintenanceTask {
+					padding: 0;
+					margin: 0;
+					margin-bottom: 5px;
+
+					color: #999999;
+					font-size: 14px;
+					text-align: left;
+					font-weight: 600;
+					text-transform: capitalize;
+				}
+
+				& .item-maintenanceTask {
+					cursor: pointer;
+
+					padding: 4px;
+					margin: 0;
+					margin-bottom: 5px;
+					width: 100%;
+
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					border: 1px solid #999999;
+					border-left-width: 6px;
+					border-radius: 8px;
+
+					& .item-maintenanceTask__text {
+						padding: 0;
+						margin: 0;
+
+						color: #999999;
+						font-size: 14px;
+						text-align: left;
+						font-weight: 400;
+					}
+
+					& .item-maintenanceTask__date {
+						margin: 0;
+						padding: 0 6px;
+
+						color: #999999;
+						font-size: 14px;
+						text-align: center;
+						font-weight: 400;
+
+						border-left: 1px solid #999999;
+					}
+				}
+			}
+		}
+	}
+}

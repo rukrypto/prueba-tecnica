@@ -1,0 +1,79 @@
+// 1600
+// 420x285
+// 330x220
+$--width:  420/1600 * 100vw; 
+$--height: 285/1600 * 100vw; 
+
+.kuDashboard__item {
+	margin: 10px 0;
+	padding: 20px;
+	padding-bottom: 10px;
+
+	width: $--width;
+	min-width: 330px;
+	max-width: 420px;
+	height: $--height;
+	min-height: 220px;
+	max-height: 285px;
+
+
+	display: flex;
+	flex-direction: column;
+
+
+
+	&__header {
+		padding-bottom: 2px;
+		width: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		border-bottom: 1px solid #122448;
+
+		&__title {
+			margin: 0;
+
+			font-size: 16px;
+			font-weight: 600;
+			text-align: left;
+		}
+
+		&__link {
+			text-decoration: none!important;
+
+			& i {
+				font-size: 15px;
+			}
+		}
+	}
+
+	&__content {
+		padding: 10px 0;
+		
+		height: 100%;
+		width: 100%;
+	}
+
+	&__footer {
+		margin: auto;
+		margin-bottom: 0;
+		display: block;
+
+		width: 100%;
+		height: 20px;
+
+		&__link {
+			display: block;
+
+			margin: auto;
+			margin-right: 0;
+
+			color: #122448;
+			font-size: 14px;
+			font-weight: 600;
+			text-align: right;
+		}
+	}
+}

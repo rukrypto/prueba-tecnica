@@ -1,0 +1,601 @@
+.kuHeader {
+  height: 70px; }
+  .kuHeader .kuHeader__menu {
+    height: 70px;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .kuHeader .kuHeader__menu .k-container-full {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .kuHeader .kuHeader__menu .k-icon-arrow-down-bold {
+      padding: 2px 0px 0 15px;
+      font-size: 6px; }
+
+.kuHeader__menu__logo {
+  display: block;
+  margin: auto;
+  margin-left: 0;
+  width: 200px;
+  height: 100%; }
+  .kuHeader__menu__logo img {
+    height: 100%;
+    width: auto;
+    max-width: 100%; }
+  .kuHeader__menu__logo a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important; }
+
+.kuHeader__menu__navbar .nav-ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+  .kuHeader__menu__navbar .nav-ul .nav-item {
+    margin: 0 15px; }
+    .kuHeader__menu__navbar .nav-ul .nav-item:nth-last-child(1) {
+      margin-right: 30px; }
+    .kuHeader__menu__navbar .nav-ul .nav-item .nav-link {
+      padding: 0 10px;
+      color: #12244899;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: capitalize;
+      -webkit-transition: .2s ease;
+      -o-transition: .2s ease;
+      transition: .2s ease; }
+      .kuHeader__menu__navbar .nav-ul .nav-item .nav-link:hover, .kuHeader__menu__navbar .nav-ul .nav-item .nav-link:focus, .kuHeader__menu__navbar .nav-ul .nav-item .nav-link:active {
+        color: #122448; }
+
+.kuHeader__menu__sign {
+  width: auto;
+  height: 100%;
+  position: relative; }
+  .kuHeader__menu__sign .nav-item {
+    height: inherit;
+    margin: 0 15px;
+    margin-left: 0;
+    list-style: none; }
+    .kuHeader__menu__sign .nav-item .nav-link {
+      padding: 0 20px;
+      padding-left: 40px;
+      height: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #122448;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: capitalize;
+      -webkit-transition: .2s ease;
+      -o-transition: .2s ease;
+      transition: .2s ease; }
+      .kuHeader__menu__sign .nav-item .nav-link:hover, .kuHeader__menu__sign .nav-item .nav-link:focus, .kuHeader__menu__sign .nav-item .nav-link:active {
+        color: #122448; }
+      .kuHeader__menu__sign .nav-item .nav-link i {
+        margin: 0;
+        margin-right: 10px; }
+  .kuHeader__menu__sign::before {
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 10px;
+    border: 1px solid #486973; }
+
+.kuDashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .kuDashboard .kuDashboard__main {
+    width: calc(100% - 230px);
+    height: calc( 100vh - 70px); }
+  .kuDashboard .kuDashboard__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+.kuDashboard__sidebar {
+  padding: 15px;
+  margin: 0;
+  height: calc(100vh - 70px);
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .kuDashboard__sidebar.-collapse {
+    width: 50px; }
+  .kuDashboard__sidebar.-expand {
+    width: 230px; }
+  .kuDashboard__sidebar .nav-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .kuDashboard__sidebar .nav-ul .nav-item {
+      width: 100%;
+      margin-bottom: 15px; }
+      .kuDashboard__sidebar .nav-ul .nav-item.active .nav-link, .kuDashboard__sidebar .nav-ul .nav-item:hover .nav-link {
+        background-color: #1c3767; }
+      .kuDashboard__sidebar .nav-ul .nav-item .nav-link {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
+        .kuDashboard__sidebar .nav-ul .nav-item .nav-link h5 {
+          margin: 10px 0;
+          color: white;
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: capitalize; }
+        .kuDashboard__sidebar .nav-ul .nav-item .nav-link img {
+          margin: 0 10px; }
+
+.kuDashboard__sidebar__header {
+  width: 100%;
+  padding: 35px 15px;
+  margin: 0;
+  margin-bottom: 10px; }
+  .kuDashboard__sidebar__header__accImage {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 95px;
+    width: 95px;
+    background-color: gray;
+    border: 3px solid white;
+    border-radius: 50%; }
+    .kuDashboard__sidebar__header__accImage img {
+      margin: 0; }
+  .kuDashboard__sidebar__header__accTitle {
+    margin: 0 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize; }
+  .kuDashboard__sidebar__header__accSelect {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px !important;
+    background-color: transparent; }
+    .kuDashboard__sidebar__header__accSelect option {
+      color: black; }
+    .kuDashboard__sidebar__header__accSelect:active, .kuDashboard__sidebar__header__accSelect:focus {
+      outline: none; }
+
+.kuDashboard__sidebar__nav {
+  width: 100%; }
+
+.kuDashboard__sidebar__footer {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 0; }
+  .kuDashboard__sidebar__footer .nav-ul {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .kuDashboard__sidebar__footer .nav-ul .nav-item {
+      margin: 0;
+      width: calc(100% - 50px); }
+      .kuDashboard__sidebar__footer .nav-ul .nav-item.-collapse {
+        height: 100%;
+        width: 40px; }
+        .kuDashboard__sidebar__footer .nav-ul .nav-item.-collapse .nav-link {
+          height: 100%;
+          width: 100%; }
+          .kuDashboard__sidebar__footer .nav-ul .nav-item.-collapse .nav-link img {
+            display: block;
+            margin: auto;
+            height: 25px;
+            width: auto; }
+
+.kuDashboard__header {
+  width: 100%; }
+  .kuDashboard__header__title {
+    margin: 0; }
+  .kuDashboard__header__navbar {
+    margin: 10px 0;
+    padding: 10px;
+    padding-left: 25px;
+    height: 60px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .kuDashboard__header__navbar__title {
+      margin: auto;
+      margin-left: 0;
+      display: block;
+      font-size: 20px;
+      font-weight: 600; }
+    .kuDashboard__header__navbar__text {
+      margin: auto;
+      margin-right: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: right; }
+    .kuDashboard__header__navbar__button {
+      margin: 0;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1;
+      height: 100%;
+      width: 245px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+
+.kuDashboard__item {
+  margin: 10px 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  width: 26.25vw;
+  min-width: 330px;
+  max-width: 420px;
+  height: 17.8125vw;
+  min-height: 220px;
+  max-height: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .kuDashboard__item__header {
+    padding-bottom: 2px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #122448; }
+    .kuDashboard__item__header__title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left; }
+    .kuDashboard__item__header__link {
+      text-decoration: none !important; }
+      .kuDashboard__item__header__link i {
+        font-size: 15px; }
+  .kuDashboard__item__content {
+    padding: 10px 0;
+    height: 100%;
+    width: 100%; }
+  .kuDashboard__item__footer {
+    margin: auto;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    height: 20px; }
+    .kuDashboard__item__footer__link {
+      display: block;
+      margin: auto;
+      margin-right: 0;
+      color: #122448;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: right; }
+
+.kuDashboard__item.-maintenanceTask .kuDashboard__item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask {
+    width: 100%; }
+    .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .title-maintenanceTask {
+      color: #1A92EA; }
+    .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask {
+      border-color: #1A92EA; }
+      .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask .item-maintenanceTask__text {
+        color: black; }
+      .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask .item-maintenanceTask__date {
+        color: #1A92EA;
+        border-color: #1A92EA; }
+    .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask .title-maintenanceTask {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 5px;
+      color: #999999;
+      font-size: 14px;
+      text-align: left;
+      font-weight: 600;
+      text-transform: capitalize; }
+    .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask .item-maintenanceTask {
+      cursor: pointer;
+      padding: 4px;
+      margin: 0;
+      margin-bottom: 5px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      border: 1px solid #999999;
+      border-left-width: 6px;
+      border-radius: 8px; }
+      .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask .item-maintenanceTask .item-maintenanceTask__text {
+        padding: 0;
+        margin: 0;
+        color: #999999;
+        font-size: 14px;
+        text-align: left;
+        font-weight: 400; }
+      .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask .item-maintenanceTask .item-maintenanceTask__date {
+        margin: 0;
+        padding: 0 6px;
+        color: #999999;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 400;
+        border-left: 1px solid #999999; }
+
+.kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory {
+  margin: 0;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory.-header .item-estimateHistory__text {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500; }
+    .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory.-header .item-estimateHistory__text.-amount {
+      color: inherit; }
+    .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory.-header .item-estimateHistory__text.-download {
+      visibility: hidden; }
+  .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text {
+    height: 100%;
+    width: 29.10053%;
+    margin: 0;
+    text-align: left;
+    text-transform: capitalize; }
+    .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text.-date span {
+      margin: 0;
+      padding: 3px 8px;
+      color: black;
+      font-size: 14px;
+      font-weight: 400;
+      background-color: #eaebee;
+      border-radius: 8px; }
+    .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text.-project {
+      font-size: 16px;
+      font-weight: 700; }
+    .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text.-amount {
+      color: #1A92EA;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: right; }
+    .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text.-download {
+      width: 12.69841%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text.-download i {
+        width: 13px;
+        height: 13px;
+        background-color: #122448;
+        border-radius: 50%; }
+
+.kuDashboard__item.-comingSoon, .kuDashboard__item.-comingSoon * {
+  background-color: transparent;
+  border: none; }
+
+.kuDashboard__item.-comingSoon .kuDashboard__item__header, .kuDashboard__item.-comingSoon .kuDashboard__item__footer {
+  visibility: hidden; }
+
+.kuDashboard__item.-comingSoon .kuDashboard__item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .kuDashboard__item.-comingSoon .kuDashboard__item__content .comingSoon {
+    margin: auto;
+    width: 100%;
+    max-width: 150px;
+    color: #999999;
+    font-size: 16px;
+    text-align: center; }
+
+.kuDashboard__item.-notAvailable .kuDashboard__item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .kuDashboard__item.-notAvailable .kuDashboard__item__content .notAvailable {
+    margin: auto;
+    width: 100%;
+    max-width: 150px;
+    color: #999999;
+    font-size: 16px;
+    text-align: center; }
+
+.kuDashboard__item.-highROI .kuDashboard__item__content .item-highROI {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .kuDashboard__item.-highROI .kuDashboard__item__content .item-highROI.-header .item-highROI__text {
+    color: #999;
+    font-size: 14px;
+    font-weight: 500; }
+    .kuDashboard__item.-highROI .kuDashboard__item__content .item-highROI.-header .item-highROI__text.-ROI {
+      color: #14CC94; }
+  .kuDashboard__item.-highROI .kuDashboard__item__content .item-highROI__text {
+    margin: 0;
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    text-transform: capitalize; }
+    .kuDashboard__item.-highROI .kuDashboard__item__content .item-highROI__text.-project {
+      font-size: 14px;
+      width: 52.91005%;
+      font-weight: 400; }
+    .kuDashboard__item.-highROI .kuDashboard__item__content .item-highROI__text.-cost {
+      color: #122448;
+      width: 26.45503%;
+      text-align: right;
+      font-weight: 700; }
+    .kuDashboard__item.-highROI .kuDashboard__item__content .item-highROI__text.-ROI {
+      width: 20.63492%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .kuDashboard__item.-highROI .kuDashboard__item__content .item-highROI__text.-ROI span {
+        padding: 0px 10px;
+        color: #14CC94;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #f1fcf9; }
+
+* {
+  font-family: 'Poppins';
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  body .k-container-full {
+    margin: 0 auto;
+    max-width: 1600px; }

@@ -1,0 +1,42 @@
+@import 'components/kuHeader';
+@import 'components/kuHeader__menu__logo';
+@import 'components/kuHeader__menu__navbar';
+@import 'components/kuHeader__menu__sign';
+@import 'components/kuDashboard';
+@import 'components/kuDashboard__sidebar';
+@import 'components/kuDashboard__sidebar__header';
+@import 'components/kuDashboard__sidebar__nav';
+@import 'components/kuDashboard__sidebar__footer';
+@import 'components/kuDashboard__header';
+@import 'components/kuDashboard__item';
+@import 'components/kuDashboard__item-homeEquity';
+@import 'components/kuDashboard__item-maintenanceTask';
+@import 'components/kuDashboard__item-estimateHistory';
+@import 'components/kuDashboard__item-comingSoon';
+@import 'components/kuDashboard__item-notAvailable';
+@import 'components/kuDashboard__item-contractorRecommend';
+@import 'components/kuDashboard__item-highROI';
+@import 'components/kuDashboard__relatedBlogs';
+@import 'components/kuDashboard__relatedBlogs__item';
+@import 'components/kuFooter';
+
+* {
+	font-family: 'Poppins';
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+	& .k-container-full {
+		margin: 0 auto;
+		max-width: 1600px;
+	}
+}

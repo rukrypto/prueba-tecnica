@@ -1,0 +1,14 @@
+.kuHeader__menu__logo {
+  display: block;
+  margin: auto;
+  margin-left: 0;
+  width: 200px;
+  height: 100%; }
+  .kuHeader__menu__logo img {
+    height: 100%;
+    width: auto;
+    max-width: 100%; }
+  .kuHeader__menu__logo a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none !important; }

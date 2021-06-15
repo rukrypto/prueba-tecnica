@@ -1,0 +1,66 @@
+// $--width: (230/1600) * 100%;
+
+.kuDashboard__sidebar {
+	padding: 15px;
+	margin: 0;
+	
+	height: calc(100vh - 70px);
+	position: sticky;
+	overflow-y: auto; 
+
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+
+	&.-collapse {
+		width: 50px;
+	}
+
+	&.-expand {
+		width: 230px;
+	}
+
+	& .nav-ul {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+
+		& .nav-item {
+			width: 100%;
+			margin-bottom: 15px;
+
+			&.active, &:hover {
+
+				& .nav-link {
+					background-color: rgb(28, 55, 103);
+				}
+			}
+
+			& .nav-link {
+				width: 100%;
+
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+
+				& h5 {
+					margin: 10px 0;
+
+					color: white;
+					font-size: 14px;
+					font-weight: 600;
+					text-transform: capitalize;
+				}
+
+				& img {
+					margin: 0 10px;
+				}
+
+				& span {}
+			}
+		}
+	}
+}

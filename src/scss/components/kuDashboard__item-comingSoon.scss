@@ -1,0 +1,37 @@
+.kuDashboard__item.-comingSoon {
+
+	&, & * {
+		background-color: transparent;
+		border: none;
+	}
+
+	& .kuDashboard__item {
+
+		&__header, &__footer {
+			visibility: hidden;
+		}
+
+		&__content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+
+			& .comingSoon {
+				margin: auto;
+				// top: 0;
+				// left: 0;
+				// right: 0;
+				// bottom: 0;
+				// position: absolute;
+
+				width: 100%;
+				max-width: 150px;
+
+				color: #999999;
+				font-size: 16px;
+				text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.kuDashboard {
+	display: flex;
+	width: 100%;
+
+	& .kuDashboard__main {
+		width: calc(100% - 230px);
+		height: calc( 100vh - 70px);
+		// overflow-y: auto;
+	}
+
+	& .kuDashboard__grid {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}

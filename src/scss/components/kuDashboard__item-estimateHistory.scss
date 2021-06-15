@@ -1,0 +1,90 @@
+// 378
+// 110*3 + 48
+$--width1: 110/378 * 100%;
+$--width2: 48/378 * 100%;
+
+.kuDashboard__item.-estimateHistory {
+
+	& .kuDashboard__item {
+
+		&__content {
+
+			& .item-estimateHistory {
+				margin: 0;
+				margin-bottom: 10px;
+
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+
+				&.-header {
+
+					& .item-estimateHistory__text {
+						color: #999999;
+						font-size: 14px;
+						font-weight: 500;
+
+						&.-amount{
+							color: inherit;
+						}
+
+						&.-download {
+							visibility: hidden;
+						}
+					}
+				}
+
+				&__text {
+					height: 100%;
+					width: $--width1;
+					margin: 0;
+					text-align: left;
+					text-transform: capitalize;
+
+					&.-date {
+
+						& span {
+							margin: 0;
+							padding: 3px 8px;
+
+							color: black;
+							font-size: 14px;
+							font-weight: 400;
+							background-color: rgb(234, 235, 238);
+							border-radius: 8px;
+						}
+					}
+
+					&.-project {
+						font-size: 16px;
+						font-weight: 700;
+					}
+
+					&.-amount {
+						color: #1A92EA;
+
+						font-size: 16px;
+						font-weight: 700;
+						text-align: right;
+					}
+
+					&.-download {
+						width: $--width2;
+
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						& i {
+
+							width: 13px;
+							height: 13px;
+							background-color: rgb(18, 36, 72);
+							border-radius: 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

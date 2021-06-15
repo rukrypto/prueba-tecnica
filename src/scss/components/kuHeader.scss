@@ -1,0 +1,22 @@
+.kuHeader {
+	height: 70px;
+
+	& .kuHeader__menu {
+		height: 70px;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		& .k-container-full {
+			height: 100%;
+
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+
+		& .k-icon-arrow-down-bold {
+			padding: 2px 0px 0 15px;
+			font-size: 6px;
+		}
+	}
+}

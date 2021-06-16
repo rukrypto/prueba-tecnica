@@ -1,3 +1,4 @@
+$--paddingResponsive: 15/650 * 100vw;
 .kuDashboard {
 	display: flex;
 	width: 100%;
@@ -12,6 +13,21 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: flex-start;
-		justify-content: space-between;
+		justify-content: center;
+	}
+
+	@media (max-width: 650px) {
+
+		& .kuDashboard__main {
+			padding: $--paddingResponsive;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 450px) {
+
+		& .kuDashboard__main {
+			padding: $--paddingResponsive 0;
+		}
 	}
 }

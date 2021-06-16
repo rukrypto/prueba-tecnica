@@ -67,6 +67,10 @@
       .kuHeader__menu__navbar .nav-ul .nav-item .nav-link:hover, .kuHeader__menu__navbar .nav-ul .nav-item .nav-link:focus, .kuHeader__menu__navbar .nav-ul .nav-item .nav-link:active {
         color: #122448; }
 
+@media (max-width: 1050px) {
+  .kuHeader__menu__navbar {
+    display: none; } }
+
 .kuHeader__menu__sign {
   width: auto;
   height: 100%;
@@ -112,6 +116,9 @@
     width: 0px;
     height: 10px;
     border: 1px solid #486973; }
+  @media (max-width: 450px) {
+    .kuHeader__menu__sign {
+      display: none; } }
 
 .kuDashboard {
   display: -webkit-box;
@@ -130,9 +137,16 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  @media (max-width: 650px) {
+    .kuDashboard .kuDashboard__main {
+      padding: 2.30769vw;
+      width: 100%; } }
+  @media (max-width: 450px) {
+    .kuDashboard .kuDashboard__main {
+      padding: 2.30769vw 0; } }
 
 .kuDashboard__sidebar {
   padding: 15px;
@@ -186,6 +200,12 @@
           text-transform: capitalize; }
         .kuDashboard__sidebar .nav-ul .nav-item .nav-link img {
           margin: 0 10px; }
+  @media (max-width: 650px) {
+    .kuDashboard__sidebar {
+      max-width: 7.69231vw; }
+      .kuDashboard__sidebar > * {
+        display: none;
+        overflow: hidden; } }
 
 .kuDashboard__sidebar__header {
   width: 100%;
@@ -260,7 +280,8 @@
     margin: 10px 0;
     padding: 10px;
     padding-left: 25px;
-    height: 60px;
+    min-height: 60px;
+    height: auto;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -272,26 +293,31 @@
     -ms-flex-pack: justify;
     justify-content: space-between; }
     .kuDashboard__header__navbar__title {
+      width: 20%;
+      min-width: 130px;
       margin: auto;
       margin-left: 0;
       display: block;
       font-size: 20px;
       font-weight: 600; }
     .kuDashboard__header__navbar__text {
-      margin: auto;
-      margin-right: 20px;
+      margin: auto 20px;
       font-size: 16px;
       font-weight: 400;
+      line-height: 1;
       text-align: right; }
     .kuDashboard__header__navbar__button {
       margin: 0;
+      padding: 10px 0;
       cursor: pointer;
       font-size: 16px;
       font-weight: 600;
       text-align: center;
       line-height: 1;
       height: 100%;
-      width: 245px;
+      width: 20%;
+      max-width: 245px;
+      min-width: 160px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -301,16 +327,30 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
+    @media (max-width: 1050px) {
+      .kuDashboard__header__navbar__text {
+        font-size: 13px; } }
+    @media (max-width: 1050px) {
+      .kuDashboard__header__navbar__text {
+        display: none; } }
+  @media (max-width: 450px) {
+    .kuDashboard__header__navbar {
+      display: none;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .kuDashboard__header__navbar__title {
+        display: none; } }
 
 .kuDashboard__item {
-  margin: 10px 0;
+  margin: 10px auto;
   padding: 20px;
   padding-bottom: 10px;
-  width: 26.25vw;
-  min-width: 330px;
+  width: 32.50774%;
+  min-width: 380px;
   max-width: 420px;
   height: 17.8125vw;
-  min-height: 220px;
+  min-height: 261px;
   max-height: 285px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +359,22 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .kuDashboard__item.loading .kuDashboard__item__header, .kuDashboard__item.loading .kuDashboard__item__footer, .kuDashboard__item.loading .kuDashboard__item__content > * {
+    border: none;
+    position: relative; }
+    .kuDashboard__item.loading .kuDashboard__item__header::after, .kuDashboard__item.loading .kuDashboard__item__footer::after, .kuDashboard__item.loading .kuDashboard__item__content > *::after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      border-radius: 8px;
+      background-color: #e7e8e9;
+      z-index: 2; }
   .kuDashboard__item__header {
     padding-bottom: 2px;
     width: 100%;
@@ -343,8 +399,10 @@
         font-size: 15px; }
   .kuDashboard__item__content {
     padding: 10px 0;
+    padding-right: 5px;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    overflow-x: hidden; }
   .kuDashboard__item__footer {
     margin: auto;
     margin-bottom: 0;
@@ -359,34 +417,49 @@
       font-size: 14px;
       font-weight: 600;
       text-align: right; }
+  @media (max-width: 450px) {
+    .kuDashboard__item {
+      min-width: initial;
+      width: 100%;
+      border: none;
+      -webkit-box-shadow: initial;
+      box-shadow: initial;
+      border-radius: 0; }
+      .kuDashboard__item__header * {
+        font-size: 14px !important;
+        line-height: 1; }
+      .kuDashboard__item__content * {
+        font-size: 13px !important;
+        line-height: 1; }
+      .kuDashboard__item.-comingSoon {
+        display: none; } }
 
 .kuDashboard__item.-maintenanceTask .kuDashboard__item__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask {
     width: 100%; }
-    .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .title-maintenanceTask {
-      color: #1A92EA; }
-    .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask {
-      border-color: #1A92EA; }
-      .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask .item-maintenanceTask__text {
-        color: black; }
-      .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask .item-maintenanceTask__date {
-        color: #1A92EA;
+    .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming {
+      margin: auto;
+      margin-bottom: 0; }
+      .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .title-maintenanceTask {
+        color: #1A92EA; }
+      .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask {
         border-color: #1A92EA; }
+        .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask .item-maintenanceTask__text {
+          color: black; }
+        .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask.-upcoming .item-maintenanceTask .item-maintenanceTask__date {
+          color: #1A92EA;
+          border-color: #1A92EA; }
     .kuDashboard__item.-maintenanceTask .kuDashboard__item__content .container-maintenanceTask .title-maintenanceTask {
       padding: 0;
       margin: 0;
@@ -488,6 +561,16 @@
         height: 13px;
         background-color: #122448;
         border-radius: 50%; }
+
+@media (max-width: 450px) {
+  .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text {
+    width: 30%; }
+    .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text.-date {
+      width: 40%; }
+      .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text.-date span {
+        font-size: 11px !important; }
+    .kuDashboard__item.-estimateHistory .kuDashboard__item__content .item-estimateHistory__text.-download {
+      display: none; } }
 
 .kuDashboard__item.-comingSoon, .kuDashboard__item.-comingSoon * {
   background-color: transparent;

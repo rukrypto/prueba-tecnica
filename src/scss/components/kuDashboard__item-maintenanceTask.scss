@@ -4,15 +4,17 @@
 
 		&__content {
 			display: flex;
-			flex-direction: column;
+			// flex-direction: column;
 			align-items: flex-start;
-			justify-content: space-between;
+			justify-content: flex-start;
 			flex-wrap: wrap;
 
 			& .container-maintenanceTask {
 				width: 100%;
 
 				&.-upcoming {
+					margin: auto;
+					margin-bottom: 0;
 
 					& .title-maintenanceTask {
 						color: #1A92EA;
